@@ -1,7 +1,9 @@
 <p>page1 works!</p>
+<!--內嵌繫結-->
+{{inputString}} <!--任務1 解答-->
 <!--屬性繫結-單向-->
 <input [value]='inputString'>
 <!--屬性繫結-雙向-->
 <input [(ngModel)]='inputString'>
 <!--事件繫結-->
-<button (click)="showMessage()">Show</button>
+<button (click)="showMessage('I change U')">Show</button> <!--任務3 解答-->

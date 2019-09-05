@@ -12,7 +12,8 @@ export class Page1Component implements OnInit {
   ngOnInit() {
   }
 
-  showMessage() {
-    this.inputString = 'I change U';
+  // 任務3 解答
+  showMessage(message: string) {
+    this.inputString = message;
   }
 }
