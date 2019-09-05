@@ -1,1 +1,7 @@
 <p>page1 works!</p>
+<!--屬性繫結-單向-->
+<input [value]='inputString'>
+<!--屬性繫結-雙向-->
+<input [(ngModel)]='inputString'>
+<!--事件繫結-->
+<button (click)="showMessage()">Show</button>
