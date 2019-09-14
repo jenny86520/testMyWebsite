@@ -1,0 +1,23 @@
+.header-title {
+  color: white;
+  background-color: gainsboro;
+  text-align: center;
+}
+.header-detail {
+  color: mediumvioletred;
+  text-align: right;
+}
+.block-main {
+  background-color: cornsilk
+}
+.title {
+  color: brown
+}
+.point-red {
+  color: red;
+  font-weight:bold;
+}
+.sign {
+  color:mediumvioletred;
+  text-align: right
+}
