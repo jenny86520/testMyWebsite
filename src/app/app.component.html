@@ -15,5 +15,13 @@
     <h5 class="sign">赤 2019-08-28</h5>
   </div>
 </div>
+<!--路由連結-->
+<ul>
+  <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">localhost:4200</a></li>
+  <li><a routerLink="/home" routerLinkActive="active">localhost:4200/home</a></li>
+  <li><a routerLink="/myPage" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">localhost:4200/myPage</a></li>
+  <li><a [routerLink]="['/', 'myPage', 'children']" routerLinkActive="active">localhost:4200/myPage/children</a></li>
+  <li><a [routerLink]="['/', path]" routerLinkActive="active">localhost:4200/otherpath</a></li>
+</ul>
 
 <router-outlet></router-outlet>
