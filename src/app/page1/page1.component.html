@@ -7,3 +7,25 @@
 <input [(ngModel)]='inputString'>
 <!--事件繫結-->
 <button (click)="showMessage('I change U')">Show</button> <!--任務3 解答-->
+<hr>
+<!--路由-->
+<button (click)="goToPage2ByUrl()">go to Page2 by url</button>
+<button (click)="goToPage2ByArray()">go to Page2 by array</button>
+<hr>
+<!--帶參數路由-->
+<button (click)="goToPage2()">go to Page2 with id</button>
+<button [routerLink]="['/','myPage', 'children', id]" >go to Page2 with id use routerLink</button>
+<button [routerLink]="['/','myPage', 'children']" [queryParams]="{ id: this.id }">
+  go to Page2 with id use queryParams
+</button>
+<hr>
+<!--隱藏路由-->
+<button (click)="goToPage2HidePath()">[hide path]go to Page2 with id</button>
+<button [routerLink]="['/','myPage', 'children', id]" skipLocationChange>
+  [hide path]go to Page2 with id use routerLink
+</button>
+<button [routerLink]="['/','myPage', 'children']" [queryParams]="{ id: this.id }"skipLocationChange>
+  [hide path]go to Page2 with id use queryParams
+</button>
+<!--任務4 解答-->
+<button (click)="goToPage2WithInput(inputString)">任務4 解答</button>

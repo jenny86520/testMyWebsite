@@ -25,6 +25,10 @@ const routes: Routes = [
       {
         path: 'children',
         component: Page2Component
+      },
+      {
+        path: 'children/:id',
+        component: Page2Component
       }
     ]
   },
